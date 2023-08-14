@@ -1,0 +1,8 @@
+<nav>
+    <a href="{% url 'index-name' %}">Главная</a>
+    <a href="https://www.homeenglish.ru/OtherGoroscop.htm">Источник</a>
+    {% for i in list_zod_all %}
+      <a href="{% url 'horoscope-name' sign_zodiac=i %}">{{i|title}}</a>
+    {% endfor %}
+</nav>
+

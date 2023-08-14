@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %} People {% endblock %}
+
+{% block content%}
+    <h2>Информация о людях</h2>
+        {% for i in people %}
+            <div>
+                <h5>ФИО - {{i.name}}</h5>
+                <p>Возраст - {{i.age}}</p>
+                <p>Телефон {{i.phone}}</p>
+            </div>
+        {% endfor %}
+{% endblock%}
